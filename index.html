@@ -7,21 +7,66 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">login</a></li>
+            
+        </ul>
+    </nav>
     <div class="box">
-
-        <form action="">
-            <fieldset>
-            <label for="">username</label>
-            <input type="text" name="username" placeholder="entrer username">
-            <label for="">Mot de passe</label>
-            <input type="password" name="mdp" placeholder="entrer votre mot de passe" minlength="8">
-            </fieldset>
-<br>
-<div class="btn">
-<button type="submit">login</button>
-</div>
-        </form>
-    </div>
+    <fieldset>
     
+    <img src="images/image.webp" alt="">
+    <label for="">Nom</label>
+    <input type="text">
+                <label for="">username</label>
+            <input type="text" id="username" name="username" placeholder="entrer username">
+            <label for="">Mot de passe</label>
+            <input type="password" id="Motdepasse" name="mdp" placeholder="entrer votre mot de passe" minlength="8">
+            <p id="erreur-mdp" style="color: red; font-weight: bold;"></p>
+             <label for="">Email</label>
+            <input type="email" id="Email" name="email" placeholder="entrer votre email">
+            <label for="">teléphone</label>
+            <input type="number" id="teléphone"    name="phone" placeholder="entrer votre numéro de téléphone" maxlength="10">
+            <p id="erreur-tele" style="color: red; font-weight: bold;"></p>
+                    <label for="">Date de naissance</label>
+        <input type="date" id="Date de naissance" name="date" placeholder="entrer votre date de naissance">
+        <label for="">sexe</label>
+        <div>
+        <input type="radio" id="homme" name="sexe" value="homme">
+        <label for="homme">Homme</label>
+        </div>
+
+        <div>
+        <input type="radio" id="femme" name="sexe" value="femme">
+           <label for="femme">Femme</label>
+           </div>
+            <label for="">Wilaya</label>
+           <select name="Wilaya" id="Wilaya">
+    <option value="Alger">Alger</option> <option value="Hors wilaya">Hors wilaya</option> </select>
+            </select>
+             <label for="">nbr d'enfants</label>
+            <input type="number" id="nbrenfants" name="enfants" placeholder="entrer le nbr d'enfants" min="1" max="10">
+            <p id="erreur-nben" style="color: red; font-weight: bold;"></p>
+            <br>
+            <label for="">parcours académique</label>
+            <textarea name="" id="parcours académique"></textarea>
+            </fieldset>
+
+
+            <div class="btn" id="btn-submit">
+                
+                       <button type="submit">sign up</button>
+            </div>
+            </div>
+
+
+
+
+
+
+<script src="recupere.js"></script>
+
 </body>
 </html>
