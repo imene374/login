@@ -10,6 +10,8 @@ body {
     min-height: 100vh; /* Utilise min-height au lieu de height pour permettre le scroll */
     background-color: bisque;
     display: flex;
+      justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
 }
 
@@ -52,9 +54,9 @@ nav.sidebar {
 }
 
 /* On décale le contenu pour ne pas qu'il soit sous la sidebar sur PC */
-body {
+/* body {
     padding-left: 200px; 
-}
+} */
 
 /* --- FORMULAIRE --- */
 fieldset {
