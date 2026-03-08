@@ -46,7 +46,40 @@ button{
 input{
     padding: 6PX 6PX;
 }
+nav {
+    display: flex;
+    flex-direction: column; /* Pour que les liens soient l'un sous l'autre */
+    
+    /* Positionnement fixe en haut à gauche */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    
+    /* Dimensions et style */
+    height: 100vh;      /* Toute la hauteur de l'écran */
+    width: 200px;       /* Largeur de ta barre */
+    background-color: #963f09; /* Couleur de fond pour la voir */
+    padding: 20px;
+    
+    /* Alignement interne */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sidebar {
+    width: 250px; /* Largeur de ton menu */
+    background-color: #963f09; /* Couleur sombre */
+    color: white;
+    padding: 20px;
+}
 
+.sidebar ul {
+    list-style: none; /* Enlève les points des listes */
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
 @media (max-width: 600px) {
     .box {
         width: 95%; 
